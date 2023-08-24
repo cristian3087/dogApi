@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView.OnQueryTextListener
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dogapi.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
@@ -27,7 +28,8 @@ class MainActivity : AppCompatActivity(),SearchView.OnQueryTextListener, OnQuery
     }
     private fun initRecyclerView(){
         adapter = DogAdapter(dogImages)
-        binding.rvDogs.layoutManager = LinearLayoutManager(this)
+        //binding.rvDogs.layoutManager = LinearLayoutManager(this)
+        binding.rvDogs.layoutManager = GridLayoutManager(this,3)
         binding.rvDogs.adapter = adapter
     }
     private fun getRetrofit():Retrofit{
