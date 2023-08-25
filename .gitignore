@@ -149,3 +149,37 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio
+
+
+#Error
+# Archivos de compilación y directorios
+*.iml
+*.apk
+*.aab
+*.log
+/build
+
+# Directorios de Android Studio
+/.idea
+/.gradle
+/captures/
+/externalNativeBuild/
+
+# Archivos locales de configuración
+local.properties
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.swm
+
+# Archivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
